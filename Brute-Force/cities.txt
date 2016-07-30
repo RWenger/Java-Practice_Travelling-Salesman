@@ -1,0 +1,4 @@
+0 0 DC
+0 1 London
+1 1 Paris
+1 0 Berlin
