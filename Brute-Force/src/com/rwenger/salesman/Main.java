@@ -6,14 +6,19 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Runs a brute force algorithm to find the shortest path.
+ * 
+ * @author Robert Wenger
+ */
 public class Main
 {
 
 	public static void main(String[] args)
 	{
-		// First read the list of cities.
 		ArrayList<City> cityList = new ArrayList<City>();
 
+		// First read the list of cities.
 		BufferedReader reader = null;
 		try
 		{
@@ -48,6 +53,12 @@ public class Main
 				System.out.println("\tto " + city2.getName() + ": " + String.valueOf(city.distanceTo(city2)));
 			}
 		}
+
+		// TODO:
+		// Generate a matrix of distances.
+		// Generate a list of paths with distances for each path.
+		// Find the shortest distance and return the path that matches along
+		// with the distance.
 
 	}
 
